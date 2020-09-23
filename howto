@@ -1,0 +1,51 @@
+This is the step by step guide for Installing and using Git and github on Ubunutu Linux: A biginner's guide
+1. Installing Git for linux
+sudo apt-get install git
+
+2. Configuring github
+
+git config --global user.name "username"
+git config --global user.email "email_id"
+
+3. create a local repository
+
+git init Mytest
+
+Intialized empty Git repository in /root/Mytest/.git/
+
+cd Mytest
+
+4. nano README
+
+This is a gir repo
+
+
+5. Adding repository files to an index
+create a file by the name sample.c by running command nano sample.c
+#include <stdio.h>
+int main ()
+{
+printf("helo world");
+
+return 0;
+}
+now you have two files README and sample.c
+
+
+
+git add READNE
+git add sample.c
+
+
+6. commiting changes made to the index
+
+git commit -m "how to install and use git and github"
+
+7. create the new reposity on the github.com by clicling on the plus sign
+
+git remote add origin https://github.com/qirfan/Mytest.git
+
+git push origin master
+
+
+
